@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <button class="btn" id="btn">Hey</button>
+
+    <script>
+      const button = document.getElementById("btn");
+
+      function buttonText() {
+        if (button.innerHTML === "GoodBye") {
+          button.innerHTML = "Bye";
+        } else {
+          button.innerHTML = "GoodBye";
+        }
+      }
+
+      button.addEventListener("click", buttonText);
+    </script>
+  </body>
+</html>
